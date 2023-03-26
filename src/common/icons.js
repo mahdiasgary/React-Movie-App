@@ -1,0 +1,10 @@
+export { MdOutlineExplore } from "react-icons/md";
+export { AiOutlineHeart } from "react-icons/ai";
+export { AiFillHeart } from "react-icons/ai";
+export { RiMovie2Fill } from "react-icons/ri";
+export { GiCeremonialMask } from "react-icons/gi";
+export { MdMonitor } from "react-icons/md";
+export { BiCameraMovie } from "react-icons/bi";
+export { BiGift } from "react-icons/bi";
+export { IoNewspaperOutline } from "react-icons/io5";
+export { AiOutlineSchedule } from "react-icons/ai";
