@@ -4,16 +4,20 @@ import ComingSoon from "../components/explore/ComingSoon";
 import TopMovie from "../components/explore/TopMovie";
 import TopSeries from "../components/explore/TopSeries";
 import TrendMovies from "../components/explore/TrendMovies";
+import { useRlt } from "../contextProvider/ContextProvider";
 
 const Explore = () => {
+  const rtl=useRlt()
+
   return (
-    <div className="mt-8 mx-5 flex xl:flex-row flex-col justify-between ">
-      <div className="flex flex-col justify-center">
+    <div className="lg:flex  w-full " >
+    <div className="mt-8 lg:w-full  mx-5  flex xs:flex-row flex-col xs:justify-between ">
+      <div className="flex w-full flex-col justify-center">
         <TrendMovies />
-        <TopMovie />
+        <TopMovie /> 
         <TopSeries />
       </div>
-      <div className="self-center lg:self-center mt-5 w-full lg:-mt-[70px]" >
+      <div className={`mt-5  relative top-0 ${rtl ? 'x:ml-10 2xl:ml-0' :'x:mr-10 2xl:mr-0'}  ` } >
         <div className="text-[20px] font-semibold flex mt-3 mx-3 ">
           <p className="self-center">Upcoming Movies</p>
           <span>
@@ -22,6 +26,7 @@ const Explore = () => {
         </div>
         <ComingSoon />
       </div>
+    </div>
     </div>
   );
 };
